@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vnetAddressSpace": {
+            "value": "192.168.0.0/16"
+        },
+        "subnetNames": {
+            "value": ["web", "app", "db"]
+        },
+        "subnetAddressSpace": {
+            "value": ["192.168.0.0/24","192.168.1.0/24","192.168.2.0/24"]
+        },
+        "vmSize": {
+            "value": "Standard_B1s"
+        },
+        "adminUsername": {
+            "value": "adminSujata"
+        },
+        "adminPWD": {
+            "value": null
+        },
+        "dbusername": {
+            "value": "adminDBSujata"
+        },
+        "dbpassword": {
+            "value": null
+        },
+        "websubnet": {
+            "value": "web"
+        }
+    }
+}

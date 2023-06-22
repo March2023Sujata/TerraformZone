@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "resources": [
+        {
+            "type": "Microsoft.Network/virtualNetworks",
+            "apiVersion": "2022-07-01",
+            "name": "ntire-vnet",
+            "location": "East US",
+            "tags": {
+                "Env":"Dev"
+            },
+            "properties": {
+                "addressSpace": {
+                    "addressPrefixes": [ "10.0.0.0/16" ]
+                },
+                "subnets": [
+                    {
+                        "name": "web",
+                        "properties": {
+                            "addressPrefix": "10.0.0.0/24"
+                        }
+                    }
+                ]
+            }
+        }
+
+    ]
+    
+}

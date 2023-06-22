@@ -1,0 +1,15 @@
+https://github.com/santiagopoli/terraform-examples/tree/master/blue-green
+
+https://medium.com/hackernoon/blue-green-infrastructure-with-terraform-d5f9e8f79ed4
+
+https://github.com/rollendxavier/terraform_azure_webapps_bluegreen_deploy
+
+https://github.com/skyscrapers/terraform-bluegreen
+
+https://github.com/antonputra/tutorials/tree/main/lessons/063?ref=morioh.com&utm_source=morioh.com
+
+https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html
+
+https://levelup.gitconnected.com/terraform-blue-green-deployment-with-azure-app-service-for-containers-978f3cc6479f
+
+https://github.com/LucasCarioca/terraform-blue-green

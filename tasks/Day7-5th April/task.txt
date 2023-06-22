@@ -1,0 +1,21 @@
+1) create linux vm manually and then create a vm using terraform and execute shell script from that vm ,try to show in the output
+
+2) from above try to run script to install ansible from terrafrom
+
+3) try to call this terrafrom template from jenkins or azure devops
+
+
+Scenario-1 (Using Jenkins )
+Those who know the Jenkins Tool, do the Task by following Jenkins way.
+Scenario-2 (Using Azure DevOps )
+---------------------------------
+Those who know the Azure DevOps Concept, do the Task by following the Azure DevOps way.
+Task:
+=====
+Create a Linux Virtual Machine (VM in case of Azure / EC2 in case of AWS) using Terraform Template and Install the Software
+* Ansible
+* Write a Shell Script
+a> Print the Ansible Version details as output
+
+b> Print 1 to 10 Numbers as output
+* You may use either use local_exec or remote_exec concept

@@ -1,0 +1,10 @@
+apply git credentials 
+
+worked on script
+
+used master-node....on node do az-login
+
+always used key based authentication
+on node do key-gen
+
+(C:\Users\vishv/.ssh/id_rsa):

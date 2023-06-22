@@ -1,0 +1,39 @@
+create azure service princple in azure
+
+go to azure directory...app registrations.....new registration...give name...select 1st option...select web in redirect URI.....click register
+
+
+then it will be created...go inside it..
+select certificates & secrets..select client secret tab....click new client secret...enter all info
+click add
+
+copy value part...
+
+then Assign a role to the application...used below link
+
+https://learn.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal
+
+---------------------------------------------------------------------------------------------------
+now add "Azure Credentials" in jenkins plugins...
+managed jenkins...Credentials...system...global...new..select azure service principal from drop down
+enter Sub ID(from azure portal),client ID(from service peincipla created in azure portal 'click on oerview') clfrom Application (client) ID, client secret (client value from azure portal as described above),add tenant ID(Directory (tenant) ID), select azure env as Azure
+
+enter id and desc...click create
+
+
+pipeline{
+    agent any
+    environment {
+        MY_CRED = credentials('AzureTerraform')
+    	}
+    stages{
+        stage('build') {
+            steps {
+                sh 'az login --service-principal -u $MY_CRED_CLIENT_ID -p $MY_CRED_CLIENT_SECRET -t $MY_CRED_TENANT_ID'
+            }
+        }
+
+}
+
+
+https://plugins.jenkins.io/azure-credentials/

@@ -1,0 +1,12 @@
+[Unit]
+Description:This is Spring-petclinic service
+
+[Service]
+User=sujata
+WorkingDirectory=/home/sujata
+ExecStart=/usr/bin/java -jar /home/sujata/spring-petclinic/target/spring-petclinic-3.0.0-SNAPSHOT.jar
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

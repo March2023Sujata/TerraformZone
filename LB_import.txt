@@ -1,0 +1,12 @@
+20.242.198.173....LB
+
+
+import
+
+terraform init
+terraform import "resource created in terraform " <id of resource in azure>
+
+see screen shot
+
+after state show...copy deatials to main.tf....
+do terraform apply....it should  give success...no change

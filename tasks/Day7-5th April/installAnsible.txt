@@ -1,0 +1,14 @@
+ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+ python3 get-pip.py --user
+
+ export PATH=$PATH:/home/sujata/.local/bin
+
+ python3 -m pip install --user ansible
+
+ python3 -m pip show ansible
+
+
+
+
+see 17th march video for terraform in ubuntu

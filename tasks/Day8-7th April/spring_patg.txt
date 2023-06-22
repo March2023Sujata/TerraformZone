@@ -1,0 +1,7 @@
+ /home/sujata/spring-petclinic/target/spring-petclinic-3.0.0-SNAPSHOT.jar
+
+ C:\Repos\spring-petclinic\target\spring-petclinic-3.0.0-SNAPSHOT.jar
+
+kill -9 25321
+
+$ lsof -i :8080

@@ -1,0 +1,5 @@
+https://medium.com/appgambit/terraform-with-jenkins-pipeline-439babe4095c
+
+https://github.com/PrashantBhatasana/terraform-jenkins-ec2
+
+https://blog.knoldus.com/how-to-run-terraform-from-jenkins/

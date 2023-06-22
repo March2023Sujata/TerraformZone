@@ -1,0 +1,88 @@
+PS C:\Repos\terraform> mkdir terraJenkins
+
+
+    Directory: C:\Repos\terraform
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         3/30/2023   7:24 PM                terraJenkins
+
+
+PS C:\Repos\terraform> cd .\terraJenkins\
+PS C:\Repos\terraform\terraJenkins> start
+
+cmdlet Start-Process at command pipeline position 1
+Supply values for the following parameters:
+FilePath: .
+PS C:\Repos\terraform\terraJenkins> git init
+Initialized empty Git repository in C:/Repos/terraform/terraJenkins/.git/
+
+PS C:\Repos\terraform\terraJenkins> git add .
+PS C:\Repos\terraform\terraJenkins> git commit -m "First commit"
+[master (root-commit) b45c817] First commit
+ 4 files changed, 61 insertions(+)
+ create mode 100644 input.tf
+ create mode 100644 input.tfvars
+ create mode 100644 main.tf
+ create mode 100644 provider.tf
+PS C:\Repos\terraform\terraJenkins> git remote add origin https://github.com/Sujata-Joshi/terraformJenkinsMarch2023.git
+PS C:\Repos\terraform\terraJenkins> git remote -v
+origin  https://github.com/Sujata-Joshi/terraformJenkinsMarch2023.git (fetch)
+origin  https://github.com/Sujata-Joshi/terraformJenkinsMarch2023.git (push)
+
+PS C:\Repos\terraform\terraJenkins> git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.08 KiB | 1.08 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Sujata-Joshi/terraformJenkinsMarch2023/pull/new/master
+remote:
+To https://github.com/Sujata-Joshi/terraformJenkinsMarch2023.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+PS C:\Repos\terraform\terraJenkins>
+PS C:\Repos\terraform\terraJenkins> git branch
+* master
+PS C:\Repos\terraform\terraJenkins> git pull --rebase https://github.com/Sujata-Joshi/terraformJenkinsMarch2023.git
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 614 bytes | 68.00 KiB/s, done.
+From https://github.com/Sujata-Joshi/terraformJenkinsMarch2023
+ * branch            HEAD       -> FETCH_HEAD
+Successfully rebased and updated refs/heads/master.
+
+
+PS C:\Repos\joip\Day8_Modules_test> git add .
+
+PS C:\Repos\joip\Day8_Modules_test> git commit -m "second commit"
+[master 08dab06] second commit
+ 3 files changed, 35 insertions(+), 27 deletions(-)
+
+PS C:\Repos\joip\Day8_Modules_test> git push
+To https://github.com/Sujata-Joshi/terraformModuleTest.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Sujata-Joshi/terraformModuleTest.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+PS C:\Repos\joip\Day8_Modules_test> git push -f origin master
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (15/15), 2.97 KiB | 1.48 MiB/s, done.
+Total 15 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Sujata-Joshi/terraformModuleTest.git
+ + 2822264...08dab06 master -> master (forced update)
+
+PS C:\Repos\joip\Day8_Modules_test>

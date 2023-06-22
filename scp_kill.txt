@@ -1,0 +1,30 @@
+sudo systemctl enable tomcat9
+
+sudo lsof -t -i:8080
+6327
+sujata@deployVM:~$ sudo kill -9 6327
+sujata@deployVM:~$
+
+
+
+ kill -9 $(sudo lsof -t -i:8080)
+
+#!/bin/bash
+kill -9 $(sudo lsof -t -i:8080)
+
+
+sh "ssh sujata@52.146.88.86  sh /home/sujata/myscript.sh}"
+
+
+/home/sujata/myscript.sh
+
+
+sh "scp -o StrictHostKeyChecking=no sujata@52.146.88.86:/home/sujata/myscript.sh /home/sujata/spring-petclinic"
+sh "scp -r sujata@52.146.88.86:/home/sujata/deploy/myscript.sh /home/sujata"
+
+
+PID=$(sudo lsof -t -i:8080)
+if [[ "" !=  "$PID" ]]; then
+  echo "killing $PID"
+  kill -9 $PID
+fi
